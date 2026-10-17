@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" font-family="'JetBrains Mono','SF Mono',Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f78166" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#58a6ff" stop-opacity="0.10"/>
+    </linearGradient>
+    <style>
+      .cursor { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .l1 { animation: type 2.2s steps(30) 0.3s both; }
+      .l2 { animation: fade 0.6s ease 2.6s both; }
+      .l3 { animation: fade 0.6s ease 3.1s both; }
+      .l4 { animation: fade 0.6s ease 3.6s both; }
+      @keyframes fade { from { opacity: 0; transform: translateY(4px);} to { opacity: 1; transform: none; } }
+      @keyframes type { from { clip-path: inset(0 100% 0 0);} to { clip-path: inset(0 0 0 0);} }
+    </style>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="899" height="259" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <rect x="0.5" y="0.5" width="899" height="259" rx="14" fill="url(#glow)"/>
+
+  <!-- window dots -->
+  <circle cx="30" cy="28" r="6" fill="#ff5f56"/>
+  <circle cx="52" cy="28" r="6" fill="#ffbd2e"/>
+  <circle cx="74" cy="28" r="6" fill="#27c93f"/>
+  <text x="450" y="32" font-size="12" fill="#7d8590" text-anchor="middle">abhijeet@india: ~</text>
+  <line x1="0" y1="48" x2="900" y2="48" stroke="#30363d"/>
+
+  <g font-size="22">
+    <g class="l1">
+      <text x="36" y="100" fill="#7d8590">$</text>
+      <text x="58" y="100" fill="#e6edf3">whoami</text>
+    </g>
+    <text class="l2" x="36" y="140" fill="#f78166" font-size="38" font-weight="700">Abhijeet Mishra</text>
+    <text class="l3" x="36" y="175" fill="#c9d1d9" font-size="17">B.Tech CSE student. I learn by building things, then breaking them.</text>
+    <text class="l4" x="36" y="205" fill="#7d8590" font-size="15">full-stack  ·  machine learning  ·  competitive programming</text>
+    <rect class="cursor" x="36" y="222" width="11" height="20" fill="#58a6ff"/>
+  </g>
+</svg>
